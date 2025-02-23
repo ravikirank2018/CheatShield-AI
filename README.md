@@ -61,3 +61,5 @@ If a hand moves significantly between two different persons, it flags a suspicio
 If a cheating tool (like a mobile phone or book) is detected, it displays an alert.
 
 ![Screenshot (904)](https://github.com/user-attachments/assets/2692759d-9526-446b-abff-b7366a96104e)
+![Screenshot (905)](https://github.com/user-attachments/assets/a9a41df1-ae22-4eb7-832b-81bb20318c47)
+
