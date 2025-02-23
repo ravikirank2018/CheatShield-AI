@@ -59,3 +59,5 @@ It scans for faces, hands, and unauthorized devices.
 If a hand moves significantly between two different persons, it flags a suspicious hand movement.
 
 If a cheating tool (like a mobile phone or book) is detected, it displays an alert.
+
+![Screenshot (904)](https://github.com/user-attachments/assets/2692759d-9526-446b-abff-b7366a96104e)
