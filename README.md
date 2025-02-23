@@ -1,75 +1,69 @@
-# 📅 Project Details
+CheatShield AI - Advanced Exam Surveillance
 
-## 📌 Project Name: AI-Driven Personalized Learning & Adaptive Exam System
+Overview
 
-- **📆 Start Date:** February 2025
-- **📍 Target Completion:** TBD (Based on phases)
-- **🎯 Goal:** To create an AI-powered learning system that adapts to each student’s learning ability, provides real-time adaptive exams, and gives personalized study recommendations using Reinforcement Learning (RL) and AI-driven question generation.
+CheatShield AI is an advanced cheating detection system that uses AI-powered object detection to monitor exam environments in real-time. This tool can analyze video feeds to detect suspicious activities, such as the use of unauthorized devices (cell phones, tablets, books) and suspicious hand movements indicative of paper exchanges.
 
----
+Features
 
-## 💡 Motivation
+Real-Time Video Analysis: Supports both live camera feeds and pre-recorded videos.
 
-### Why This Project?
+AI-Powered Detection: Uses YOLOv8 for object and movement detection.
 
-✅ Traditional learning methods follow a one-size-fits-all approach, where every student is treated the same, despite having different learning speeds.  
-✅ Students struggle with weak areas but lack personalized recommendations to improve effectively.  
-✅ AI and Adaptive Learning can revolutionize education by personalizing the learning experience for every student.  
+Multiple Cheating Indicators: Detects unauthorized devices like mobile phones, laptops, books, and tablets.
 
----
+Hand Movement Tracking: Flags suspicious hand movements indicating potential paper exchanges.
 
-## 🎯 Key Objectives
+User-Friendly Interface: Simple UI built using Tkinter.
 
-- 🔹 **AI-Powered Adaptive Testing:** The system dynamically adjusts question difficulty based on the student’s real-time performance.
-- 🔹 **Personalized Study Plans:** AI recommends custom learning materials based on weaknesses.
-- 🔹 **Dropout Prediction Model:** Predicts struggling students and suggests interventions.
-- 🔹 **Reinforcement Learning (RL) for Exam Generation:** AI learns and improves question selection for better student outcomes.
-- 🔹 **Real-time Performance Analytics Dashboard:** Allows students and instructors to track progress with AI-driven insights.
+Requirements
 
----
+Ensure the following dependencies are installed before running the application:
 
-## 🛠️ Technologies & Tools
+pip install opencv-python numpy tkinter torch ultralytics pillow
 
-| Component  | Technology |
-|------------|------------|
-| **Frontend**  | AngularJS (for UI Dashboard) |
-| **Backend**  | Python (FastAPI / Flask) |
-| **AI & ML Models**  | TensorFlow, PyTorch, Reinforcement Learning (RL), NLP |
-| **Database**  | Oracle SQL |
-| **Cloud Deployment**  | Oracle Cloud / AWS |
-| **UML & Architecture Design**  | PlantUML, Draw.io |
-| **Version Control**  | GitHub / GitLab |
+Installation
 
----
+Clone the repository:
 
-## 🚀 Getting Started
+git clone https://github.com/ravikirank2018/CheatShield-AI---Advanced-Exam-Surveillance.git
 
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
-   ```
-2. **Install Dependencies:**
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. **Run the Application:**
-   ```sh
-   python main.py
-   ```
+Install dependencies:
 
----
+pip install -r requirements.txt
 
-## 🤝 Contributing
+Download the YOLOv8 model (if not included):
 
-Contributions are welcome! Please open an issue or submit a pull request if you have ideas or improvements.
+wget https://github.com/ultralytics/yolov8/releases/download/v8.0/yolov8n.pt
 
----
+Usage
 
-## 📧 Contact
+Run the Application
 
-**Owner:** Ravi Kiran K
+To start the application, run:
 
-For any queries, feel free to reach out!
+python cheatshield_ai.py
 
+Options
 
+Upload Video: Allows you to select and analyze a pre-recorded video.
+
+Use Camera: Uses a live webcam feed to detect cheating in real-time.
+
+How It Works
+
+The application loads the YOLOv8 model to detect objects in frames.
+
+It scans for faces, hands, and unauthorized devices.
+
+If a hand moves significantly between two different persons, it flags a suspicious hand movement.
+
+If a cheating tool (like a mobile phone or book) is detected, it displays an alert.
+
+Contributing
+
+Feel free to contribute by submitting issues or pull requests!
+
+License
+
+This project is licensed under the MIT License.
